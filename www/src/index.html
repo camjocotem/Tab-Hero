@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GAEMZ</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/angular-material.css" />
+
+	<script src="lib/jquery.js"></script>
+	<script src="lib/dependency.js"></script>
+	<script src="lib/app.js"></script>
+	<script src="lib/app.env.js"></script>
+	<script src="lib/app.states.js"></script>
+	<script src="lib/tabApp.js"></script>
+</head>
+
+<body ng-app="app" layout="column" layout-align="space-between stretch" flex="100" ng-controller="MainController as mn" ng-keyup="mn.moveCharacter($event)">
+	<main flex layout="row" layout-align="center center" ui-view="primary">
+	</main>
+</body>
+
+</html>
